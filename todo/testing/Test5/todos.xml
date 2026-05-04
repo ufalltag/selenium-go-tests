@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArrayOfTodoData>
+  <TodoData>
+    <Title>Деплой в прод 1</Title>
+    <Deadline>2026-05-20</Deadline>
+  </TodoData>
+  <TodoData>
+    <Title>Написать тесты 2</Title>
+    <Deadline>2026-05-07</Deadline>
+  </TodoData>
+  <TodoData>
+    <Title>Обновить документацию 3</Title>
+    <Deadline>2026-05-27</Deadline>
+  </TodoData>
+  <TodoData>
+    <Title>Написать тесты 4</Title>
+    <Deadline>2026-05-14</Deadline>
+  </TodoData>
+  <TodoData>
+    <Title>Деплой в прод 5</Title>
+    <Deadline>2026-05-02</Deadline>
+  </TodoData>
+</ArrayOfTodoData>
