@@ -19,7 +19,7 @@
 {{if .Todos}}
     {{range .Todos}}
     <div>
-        <strong>{{.Title}}</strong> — до {{.Deadline}}
+        <strong>{{.Title}}</strong> — до {{.Deadline | formatDate}}
         <form method="post" action="/todos/{{.ID}}/delete" style="display:inline">
             <button type="submit">Удалить</button>
         </form>

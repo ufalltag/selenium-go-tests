@@ -1,7 +1,9 @@
 package main
 
 import (
+	"html/template"
 	"log"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	_ "modernc.org/sqlite"
@@ -14,6 +16,15 @@ func main() {
 	defer db.Close()
 
 	r := gin.Default()
+	r.SetFuncMap(template.FuncMap{
+		"formatDate": func(s string) string {
+			t, err := time.Parse("2006-01-02", s)
+			if err != nil {
+				return s
+			}
+			return t.Format("02.01.2006")
+		},
+	})
 	r.LoadHTMLGlob("templates/*")
 
 	r.GET("/login", loginGetHandler)
